@@ -1,10 +1,8 @@
 void setup() {
-pinMode(2, OUTPUT);
-
+pinMode(A2, INPUT);
+Serial.begin(9600);
 }
 
 void loop() {
-analogWrite(2, 100
-);
-
+Serial.println(analogRead(A2));
 }
